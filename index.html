@@ -1,563 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Kavya BS - AI & Data Science Portfolio | Passionate engineering student specializing in Artificial Intelligence and Data Science">
-    <meta name="keywords" content="Kavya BS, Portfolio, AI, Data Science, Python, Machine Learning">
-    <title>Kavya BS | AI & Data Science Portfolio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Preethesh Kumar | Data Engineer Portfolio</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<style>
+    body {font-family: Inter, sans-serif; margin:0; background:#0f172a; color:#fff;}
+    section {padding:60px 20px; max-width:1100px; margin:auto;}
+    h1,h2,h3 {margin-bottom:10px;}
+    .hero {text-align:center;}
+    .btn {padding:10px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:5px;}
+    .grid {display:grid; gap:20px;}
+    .grid-2 {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .card {background:#1e293b; padding:20px; border-radius:10px;}
+</style>
+```
+
 </head>
 
 <body>
 
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
+<!-- HERO -->
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>Kavya<span class="logo-dot">.</span>BS<span
-                    class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+<section class="hero">
+    <h1>Preethesh Kumar</h1>
+    <h3>Data Engineer | Data Science Enthusiast</h3>
+    <p>Aspiring Data Engineer skilled in Machine Learning, Big Data, and Analytics. Passionate about building scalable data systems.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting animate-in">Hello, I'm</p>
-                <h1 class="hero-name animate-in delay-1">Kavya BS</h1>
-                <div class="hero-title-wrapper animate-in delay-2">
-                    <span class="hero-title-label">I'm a</span>
-                    <span class="hero-title" id="typingText"></span>
-                    <span class="typing-cursor">|</span>
-                </div>
-                <p class="hero-description animate-in delay-3">
-                    Passionate and dedicated engineering student with a strong foundation in
-                    computer science engineering principles. Seeking opportunities to leverage
-                    my skills in practical environments and contribute to innovative projects.
-                </p>
-                <div class="hero-actions animate-in delay-4">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View Projects</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <span>Get In Touch</span>
-                    </a>
-                </div>
-                <div class="hero-stats animate-in delay-5">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Certifications</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="8.9">0</span>
-                        <span class="stat-label">CGPA</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual animate-in delay-2">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image-ring"></div>
-                    <div class="hero-image-ring ring-2"></div>
-                    <div class="hero-image">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="floating-badge badge-1">
-                    <i class="fas fa-brain"></i>
-                    <span>AI & ML</span>
-                </div>
-                <div class="floating-badge badge-2">
-                    <i class="fas fa-database"></i>
-                    <span>Data Science</span>
-                </div>
-                <div class="floating-badge badge-3">
-                    <i class="fas fa-code"></i>
-                    <span>Python</span>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-dot"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
+<!-- ABOUT -->
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get to Know Me</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-content">
-                    <p class="about-text">
-                        I'm <strong>Kavya BS</strong>, a final-year student pursuing
-                        <strong>Artificial Intelligence and Data Science</strong> at SJC Institute of Technology
-                        with a CGPA of <strong>8.9</strong>. I'm passionate about building intelligent solutions
-                        that solve real-world problems.
-                    </p>
-                    <p class="about-text">
-                        My journey in tech spans across AI chatbots, IoT-based agriculture solutions,
-                        predictive analytics, and retail data analysis. I thrive on transforming complex
-                        data into actionable insights and creating impactful applications.
-                    </p>
-                    <div class="about-info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <span class="info-label">Degree</span>
-                                <span class="info-value">B.E. in AI & Data Science</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span class="info-label">Location</span>
-                                <span class="info-value">Kolar, Karnataka</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-language"></i>
-                            <div>
-                                <span class="info-label">Languages</span>
-                                <span class="info-value">English, Kannada, Telugu</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-star"></i>
-                            <div>
-                                <span class="info-label">Interests</span>
-                                <span class="info-value">AI, IoT, Data Analytics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-card-stack">
-                        <div class="about-card card-1">
-                            <div class="card-icon"><i class="fas fa-robot"></i></div>
-                            <h4>AI & Machine Learning</h4>
-                            <p>Building intelligent chatbots and predictive models</p>
-                        </div>
-                        <div class="about-card card-2">
-                            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-                            <h4>Data Analysis</h4>
-                            <p>Transforming data into visual insights</p>
-                        </div>
-                        <div class="about-card card-3">
-                            <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                            <h4>IoT Solutions</h4>
-                            <p>Hardware-software integration for smart agriculture</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I'm a final-year Computer Science student specializing in Data Science at 
+        St. Joseph Engineering College, Mangalore with a CGPA of 8.69.
+        I enjoy working with data, building ML models, and developing scalable pipelines.
+    </p>
+</section>
 
-    <!-- Education Section -->
-    <section class="section education" id="education">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Academic Journey</span>
-                <h2 class="section-title">Education</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="timeline-header">
-                                <div class="timeline-icon"><i class="fas fa-university"></i></div>
-                                <div>
-                                    <h3>SJC Institute of Technology</h3>
-                                    <span class="timeline-degree">B.E. in Artificial Intelligence & Data Science</span>
-                                </div>
-                            </div>
-                            <div class="timeline-meta">
-                                <span class="timeline-year"><i class="fas fa-calendar"></i> 2022 – 2026</span>
-                                <span class="timeline-score"><i class="fas fa-star"></i> 8.9 CGPA</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="timeline-header">
-                                <div class="timeline-icon"><i class="fas fa-school"></i></div>
-                                <div>
-                                    <h3>Vidya Jyothi Pre University College</h3>
-                                    <span class="timeline-degree">PCMB (Pre-University)</span>
-                                </div>
-                            </div>
-                            <div class="timeline-meta">
-                                <span class="timeline-year"><i class="fas fa-calendar"></i> 2019 – 2021</span>
-                                <span class="timeline-score"><i class="fas fa-star"></i> 98%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-card">
-                            <div class="timeline-header">
-                                <div class="timeline-icon"><i class="fas fa-book-reader"></i></div>
-                                <div>
-                                    <h3>Sree Preethi Vidya Mandir, Yeldur</h3>
-                                    <span class="timeline-degree">10th Standard (SSLC)</span>
-                                </div>
-                            </div>
-                            <div class="timeline-meta">
-                                <span class="timeline-year"><i class="fas fa-calendar"></i> 2019</span>
-                                <span class="timeline-score"><i class="fas fa-star"></i> 94%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- EDUCATION -->
 
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What I Know</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-category-icon"><i class="fas fa-code"></i></div>
-                        <h3>Technical Skills</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Data Structures</span>
-                        <span class="skill-tag"><i class="fas fa-sort-amount-up"></i> Algorithms</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
-                        <span class="skill-tag"><i class="fas fa-layer-group"></i> Arrays & Stacks</span>
-                        <span class="skill-tag"><i class="fas fa-stream"></i> Queues</span>
-                        <span class="skill-tag"><i class="fas fa-link"></i> Linked Lists</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
-                        <h3>Tools & Software</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag"><i class="fas fa-file-word"></i> MS Word</span>
-                        <span class="skill-tag"><i class="fas fa-file-excel"></i> MS Excel</span>
-                        <span class="skill-tag"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-category-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3>Soft Skills</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag"><i class="fas fa-comments"></i> Communication</span>
-                        <span class="skill-tag"><i class="fas fa-users"></i> Teamwork</span>
-                        <span class="skill-tag"><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
-                        <span class="skill-tag"><i class="fas fa-brain"></i> Analytical Thinking</span>
-                        <span class="skill-tag"><i class="fas fa-search"></i> Critical Thinking</span>
-                        <span class="skill-tag"><i class="fas fa-palette"></i> Creativity</span>
-                    </div>
-                </div>
-            </div>
+<section>
+    <h2>Education</h2>
+    <div class="grid grid-2">
+        <div class="card">
+            <h3>St. Joseph Engineering College</h3>
+            <p>B.E. Computer Science (Data Science)</p>
+            <p>2022 - 2026 | CGPA: 8.69</p>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" id="project-1">
-                    <div class="project-card-inner">
-                        <div class="project-number">01</div>
-                        <div class="project-icon"><i class="fas fa-robot"></i></div>
-                        <h3 class="project-title">AI Chatbot for Educational Institution</h3>
-                        <p class="project-desc">
-                            An integrated conversational AI Chatbot designed to help students
-                            access information about college details — courses, departments,
-                            cultural activities, and more — through natural language interaction.
-                        </p>
-                        <div class="project-tags">
-                            <span>AI</span><span>NLP</span><span>Chatbot</span><span>Python</span>
-                        </div>
-                        <div class="project-link-row">
-                            <span class="project-status"><i class="fas fa-check-circle"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" id="project-2">
-                    <div class="project-card-inner">
-                        <div class="project-number">02</div>
-                        <div class="project-icon"><i class="fas fa-seedling"></i></div>
-                        <h3 class="project-title">AI & IoT Impact on Agriculture</h3>
-                        <p class="project-desc">
-                            A hardware project utilizing multiple sensors to test soil humidity
-                            and temperature, enabling farmers to determine optimal growing
-                            conditions for plants at specific distances.
-                        </p>
-                        <div class="project-tags">
-                            <span>IoT</span><span>AI</span><span>Hardware</span><span>Sensors</span>
-                        </div>
-                        <div class="project-link-row">
-                            <span class="project-status"><i class="fas fa-check-circle"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" id="project-3">
-                    <div class="project-card-inner">
-                        <div class="project-number">03</div>
-                        <div class="project-icon"><i class="fas fa-plane-departure"></i></div>
-                        <h3 class="project-title">Predicting Flight Delays</h3>
-                        <p class="project-desc">
-                            A predictive analytics project that forecasts flight delays based on
-                            key features such as departure time, weather conditions, and airline
-                            performance data using machine learning.
-                        </p>
-                        <div class="project-tags">
-                            <span>ML</span><span>Python</span><span>Analytics</span><span>Prediction</span>
-                        </div>
-                        <div class="project-link-row">
-                            <span class="project-status"><i class="fas fa-check-circle"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" id="project-4">
-                    <div class="project-card-inner">
-                        <div class="project-number">04</div>
-                        <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-                        <h3 class="project-title">Online Retail Analysis</h3>
-                        <p class="project-desc">
-                            Analyzed transaction data from a retail store to identify top-selling
-                            products and frequent customers. Created rich visualizations of product
-                            trends and customer behavior patterns.
-                        </p>
-                        <div class="project-tags">
-                            <span>Data Analysis</span><span>Visualization</span><span>Python</span><span>Retail</span>
-                        </div>
-                        <div class="project-link-row">
-                            <span class="project-status"><i class="fas fa-check-circle"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <h3>Vivekananda College</h3>
+            <p>PCMB</p>
+            <p>2020 - 2022 | 89%</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Certifications Section -->
-    <section class="section certifications" id="certifications">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Continuous Learning</span>
-                <h2 class="section-title">Certifications</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <div class="cert-info">
-                        <h4>Introduction to Artificial Intelligence</h4>
-                        <span class="cert-issuer"><i class="fas fa-building"></i> Simply Learn</span>
-                    </div>
-                    <div class="cert-badge"><i class="fas fa-certificate"></i></div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-sitemap"></i></div>
-                    <div class="cert-info">
-                        <h4>Design and Analysis of Algorithms (DAA)</h4>
-                        <span class="cert-issuer"><i class="fas fa-building"></i> Mind Luster</span>
-                    </div>
-                    <div class="cert-badge"><i class="fas fa-certificate"></i></div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-sync-alt"></i></div>
-                    <div class="cert-info">
-                        <h4>Agile Methodologies in Software Development</h4>
-                        <span class="cert-issuer"><i class="fas fa-building"></i> Development & Testing with
-                            Agile</span>
-                    </div>
-                    <div class="cert-badge"><i class="fas fa-certificate"></i></div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
-                    <div class="cert-info">
-                        <h4>Introduction to Artificial Intelligence</h4>
-                        <span class="cert-issuer"><i class="fas fa-building"></i> Simply Learn</span>
-                    </div>
-                    <div class="cert-badge"><i class="fas fa-certificate"></i></div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <div class="cert-info">
-                        <h4>Solution Architect Job Simulation</h4>
-                        <span class="cert-issuer"><i class="fas fa-building"></i> AWS</span>
-                    </div>
-                    <div class="cert-badge"><i class="fas fa-certificate"></i></div>
-                </div>
-            </div>
+<!-- SKILLS -->
+
+<section>
+    <h2>Skills</h2>
+    <div class="grid grid-2">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>C++, Python, SQL</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Let's Connect</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info-side">
-                    <p class="contact-intro">
-                        I'm actively looking for internship opportunities and would love to hear from you.
-                        Feel free to reach out!
-                    </p>
-                    <div class="contact-cards">
-                        <a href="mailto:kavyabs1kavya@gmail.com" class="contact-card" id="contact-email">
-                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span class="contact-card-label">Email</span>
-                                <span class="contact-card-value">kavyabs1kavya@gmail.com</span>
-                            </div>
-                        </a>
-                        <a href="tel:+917676324967" class="contact-card" id="contact-phone">
-                            <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <span class="contact-card-label">Phone</span>
-                                <span class="contact-card-value">+91 7676324967</span>
-                            </div>
-                        </a>
-                        <div class="contact-card" id="contact-location">
-                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <span class="contact-card-label">Location</span>
-                                <span class="contact-card-value">Kolar District, Karnataka 563136</span>
-                            </div>
-                        </div>
-                        <a href="https://www.linkedin.com/in/kavya-kavyabs" target="_blank" class="contact-card"
-                            id="contact-linkedin">
-                            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
-                            <div>
-                                <span class="contact-card-label">LinkedIn</span>
-                                <span class="contact-card-value">kavya-kavyabs</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-side">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="formName" placeholder=" " required>
-                            <label for="formName">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="formEmail" placeholder=" " required>
-                            <label for="formEmail">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="formSubject" placeholder=" ">
-                            <label for="formSubject">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="formMessage" rows="5" placeholder=" " required></textarea>
-                            <label for="formMessage">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+        <div class="card">
+            <h3>Technologies</h3>
+            <p>Machine Learning, PySpark, Big Data, DBMS</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <span class="logo-bracket">&lt;</span>Kavya<span class="logo-dot">.</span>BS<span
-                            class="logo-bracket">/&gt;</span>
-                    </a>
-                    <p>Aspiring AI & Data Science Engineer</p>
-                </div>
-                <div class="footer-social">
-                    <a href="mailto:kavyabs1kavya@gmail.com" class="social-link" aria-label="Email"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/kavya-kavyabs" target="_blank" class="social-link"
-                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="tel:+917676324967" class="social-link" aria-label="Phone"><i
-                            class="fas fa-phone-alt"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Kavya BS. All rights reserved.</p>
-            </div>
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Azure, Databricks, Power BI, Tableau, GitHub, Linux</p>
         </div>
-    </footer>
+        <div class="card">
+            <h3>Soft Skills</h3>
+            <p>Leadership, Teamwork, Strategic Planning</p>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- PROJECTS -->
+
+<section>
+    <h2>Projects</h2>
+    <div class="grid grid-2">
+
+```
+    <div class="card">
+        <h3>Verichain - GenAI Blockchain</h3>
+        <p>Built secure blockchain-based evidence system using Hyperledger, IPFS, and AI forgery detection.</p>
+    </div>
+
+    <div class="card">
+        <h3>YouTube Data Analysis</h3>
+        <p>Scraped YouTube data and built ML models with 90% accuracy to predict engagement.</p>
+    </div>
+
+    <div class="card">
+        <h3>House Price Prediction</h3>
+        <p>Developed regression models using Python and Scikit-learn for real estate prediction.</p>
+    </div>
+
+    <div class="card">
+        <h3>Routewise AI Optimizer</h3>
+        <p>AI-powered navigation system integrating MCP servers and localized routing.</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Data Engineer Intern - InternAge</h3>
+        <p>2026</p>
+        <ul>
+            <li>Worked with Apache Spark and Databricks</li>
+            <li>Built data pipelines using SQL</li>
+            <li>Performed data cleaning and transformation</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+    <h2>Achievements</h2>
+    <ul>
+        <li>3rd Place - VTU Mangalore Kabaddi Tournament (2023)</li>
+        <li>Participated in Kho-Kho competitions (2024)</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: preethesh.kumar29@gmail.com</p>
+    <p>Phone: +91 9353579647</p>
+    <p>
+        <a href="https://github.com/Preethesh29" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/preethesh-kumar-b5aa25294/" class="btn">LinkedIn</a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+
+<section style="text-align:center;">
+    <p>© 2026 Preethesh Kumar</p>
+</section>
+
 </body>
-
 </html>
