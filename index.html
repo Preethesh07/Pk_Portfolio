@@ -4,162 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preethesh Kumar | Data Engineer Portfolio</title>
+    <title>Preethesh Kumar | Portfolio</title>
 
 ```
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<style>
-    body {font-family: Inter, sans-serif; margin:0; background:#0f172a; color:#fff;}
-    section {padding:60px 20px; max-width:1100px; margin:auto;}
-    h1,h2,h3 {margin-bottom:10px;}
-    .hero {text-align:center;}
-    .btn {padding:10px 20px; background:#2563eb; color:#fff; text-decoration:none; border-radius:5px;}
-    .grid {display:grid; gap:20px;}
-    .grid-2 {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-    .card {background:#1e293b; padding:20px; border-radius:10px;}
-</style>
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
 ```
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav id="navbar">
+    <h2>Preethesh</h2>
+    <div id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div id="navToggle">☰</div>
+</nav>
+
 <!-- HERO -->
 
-<section class="hero">
-    <h1>Preethesh Kumar</h1>
-    <h3>Data Engineer | Data Science Enthusiast</h3>
-    <p>Aspiring Data Engineer skilled in Machine Learning, Big Data, and Analytics. Passionate about building scalable data systems.</p>
-    <a href="#contact" class="btn">Contact Me</a>
+<section id="home" class="hero">
+    <h1>Hi, I'm Preethesh Kumar</h1>
+    <h2 id="typingText"></h2>
 </section>
 
 <!-- ABOUT -->
 
-<section>
+<section id="about" class="section">
     <h2>About Me</h2>
-    <p>
-        I'm a final-year Computer Science student specializing in Data Science at 
-        St. Joseph Engineering College, Mangalore with a CGPA of 8.69.
-        I enjoy working with data, building ML models, and developing scalable pipelines.
-    </p>
-</section>
-
-<!-- EDUCATION -->
-
-<section>
-    <h2>Education</h2>
-    <div class="grid grid-2">
-        <div class="card">
-            <h3>St. Joseph Engineering College</h3>
-            <p>B.E. Computer Science (Data Science)</p>
-            <p>2022 - 2026 | CGPA: 8.69</p>
-        </div>
-        <div class="card">
-            <h3>Vivekananda College</h3>
-            <p>PCMB</p>
-            <p>2020 - 2022 | 89%</p>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-
-<section>
-    <h2>Skills</h2>
-    <div class="grid grid-2">
-        <div class="card">
-            <h3>Programming</h3>
-            <p>C++, Python, SQL</p>
-        </div>
-        <div class="card">
-            <h3>Technologies</h3>
-            <p>Machine Learning, PySpark, Big Data, DBMS</p>
-        </div>
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Azure, Databricks, Power BI, Tableau, GitHub, Linux</p>
-        </div>
-        <div class="card">
-            <h3>Soft Skills</h3>
-            <p>Leadership, Teamwork, Strategic Planning</p>
-        </div>
-    </div>
+    <p>I am a Data Engineer & Python Developer passionate about building scalable systems.</p>
 </section>
 
 <!-- PROJECTS -->
 
-<section>
+<section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="grid grid-2">
 
 ```
-    <div class="card">
-        <h3>Verichain - GenAI Blockchain</h3>
-        <p>Built secure blockchain-based evidence system using Hyperledger, IPFS, and AI forgery detection.</p>
-    </div>
+<div class="project-card">
+    <h3>Budget Bee</h3>
+    <p>Finance tracker using Python & SQLite</p>
+</div>
 
-    <div class="card">
-        <h3>YouTube Data Analysis</h3>
-        <p>Scraped YouTube data and built ML models with 90% accuracy to predict engagement.</p>
-    </div>
-
-    <div class="card">
-        <h3>House Price Prediction</h3>
-        <p>Developed regression models using Python and Scikit-learn for real estate prediction.</p>
-    </div>
-
-    <div class="card">
-        <h3>Routewise AI Optimizer</h3>
-        <p>AI-powered navigation system integrating MCP servers and localized routing.</p>
-    </div>
-
+<div class="project-card">
+    <h3>Toxic Comment Classifier</h3>
+    <p>Real-time NLP system using BERT & Kafka</p>
 </div>
 ```
 
 </section>
 
-<!-- EXPERIENCE -->
-
-<section>
-    <h2>Experience</h2>
-    <div class="card">
-        <h3>Data Engineer Intern - InternAge</h3>
-        <p>2026</p>
-        <ul>
-            <li>Worked with Apache Spark and Databricks</li>
-            <li>Built data pipelines using SQL</li>
-            <li>Performed data cleaning and transformation</li>
-        </ul>
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>3rd Place - VTU Mangalore Kabaddi Tournament (2023)</li>
-        <li>Participated in Kho-Kho competitions (2024)</li>
-    </ul>
-</section>
-
 <!-- CONTACT -->
 
-<section id="contact">
+<section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: preethesh.kumar29@gmail.com</p>
-    <p>Phone: +91 9353579647</p>
-    <p>
-        <a href="https://github.com/Preethesh29" class="btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/preethesh-kumar-b5aa25294/" class="btn">LinkedIn</a>
-    </p>
+
+```
+<form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button id="submitBtn">Send</button>
+</form>
+```
+
 </section>
 
-<!-- FOOTER -->
+<!-- CURSOR GLOW -->
 
-<section style="text-align:center;">
-    <p>© 2026 Preethesh Kumar</p>
-</section>
+<div id="cursorGlow"></div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
